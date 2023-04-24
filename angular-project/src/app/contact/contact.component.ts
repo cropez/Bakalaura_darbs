@@ -7,7 +7,7 @@ import { FormControl } from '@angular/forms';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit, OnDestroy {
-  currentTime: string;
+  currentTime!: string;
   selectedDate = new Date();
   private interval: any;
 
