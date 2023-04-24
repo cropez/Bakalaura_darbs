@@ -22,6 +22,8 @@
   import "vue3-datepicker/dist/vue3-datepicker.css";
   
   export default {
+     // eslint-disable-next-line vue/multi-word-component-names
+    name: 'Contact',
     components: {
       DatePicker,
     },

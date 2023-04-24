@@ -15,6 +15,8 @@
   import Banner from "./assets/img_5.png";
   
   export default {
+   // eslint-disable-next-line vue/multi-word-component-names
+    name: 'Dashboard',
     components: {
       DatePicker,
     },

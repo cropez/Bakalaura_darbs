@@ -1,0 +1,24 @@
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .time-display {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    margin-top: 40px;
+  }
+  
+  .date-picker-container {
+    display: flex;
+    align-items: baseline;
+    margin-top: 20px;
+  }
+  
+  .texts {
+    padding-left: 200px;
+    padding-right: 20px;
+  }
