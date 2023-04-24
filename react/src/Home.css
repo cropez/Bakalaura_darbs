@@ -1,8 +1,12 @@
 .image .responsive-image {
     max-width: 15%;
     height: auto;
+    padding-left: 20px;
   }
-  
+  .textss {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
   @media (max-width: 768px) {
     .image .responsive-image  {
@@ -13,4 +17,7 @@
   }
   .alig{
     display: inline-flex;
+  }
+  .h{
+    text-align: center;
   }
