@@ -1,0 +1,81 @@
+.header {
+  background-color: #3f51b5;
+  color: white;
+  padding: 10px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.account-icon i {
+  font-size: 40px;
+}
+
+.logo {
+  font-family: monospace;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  text-decoration: none;
+  color: inherit;
+  margin-left: 20px;
+}
+
+.menu-btn {
+  display: none;
+}
+
+.menu-btn i {
+  font-size: 30px;
+}
+
+.menu {
+  display: flex;
+  gap: 10px;
+}
+
+.menu-item {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.mobile-menu {
+display: none;
+flex-direction: column;
+position: absolute;
+top: 100%;
+right: 0;
+background-color: #3f51b5;
+border: 1px solid rgba(255, 255, 255, 0.2);
+padding: 10px 20px;
+}
+
+.mobile-menu .menu-item {
+margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+.menu {
+display: none;
+}
+
+.menu-btn {
+display: block;
+}
+
+.mobile-menu {
+display: flex;
+}
+}

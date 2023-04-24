@@ -1,0 +1,16 @@
+.image .responsive-image {
+    max-width: 15%;
+    height: auto;
+  }
+  
+
+  @media (max-width: 768px) {
+    .image .responsive-image  {
+        max-width: 80%;
+        height: auto;
+        align-items: center;
+    }
+  }
+  .alig{
+    display: inline-flex;
+  }

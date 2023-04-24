@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { useMediaQuery } from "react-responsive";
-import Header from "./Header"
+import Header from "./components/Header"
 import Home from "./Home";
 
 function App() {
