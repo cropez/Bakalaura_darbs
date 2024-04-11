@@ -1,0 +1,39 @@
+<mat-card>
+    <mat-card-content>
+      <div class="container" style="max-width: xl;">
+        <div class="text-center" style="margin-top: 40px;">
+          <h4>Profile</h4>
+        </div>
+        <mat-divider style="margin-y: 30px;"></mat-divider>
+  
+        <div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="start center">
+          <div fxFlex="12" fxFlex.gt-sm="6" fxFlex.gt-md="4">
+            <mat-card>
+              <mat-card-content>
+                <h6>Personal Information</h6>
+                <p>First Name: {{profileData.firstName}}</p>
+                <p>Last Name: {{profileData.lastName}}</p>
+                <p>Role: {{profileData.role}}</p>
+              </mat-card-content>
+            </mat-card>
+          </div>
+  
+          <div fxFlex="12" fxFlex.gt-sm="6" fxFlex.gt-md="8">
+            <mat-card>
+              <mat-card-content>
+                <h6>Biogrāfija</h6>
+                <p>{{profileData.bio}}</p>
+              </mat-card-content>
+            </mat-card>
+          </div>
+        </div>
+  
+        <div style="margin-top: 20px;" fxLayout="row" fxLayoutGap="20px">
+          <div fxFlex="12" fxFlex.gt-sm="4" fxFlex.gt-md="2">
+            <button mat-raised-button color="primary">Rediģēt profilu</button>
+          </div>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+  

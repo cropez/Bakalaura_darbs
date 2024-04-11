@@ -1,0 +1,7 @@
+<h2>Jūsu iepirkumu grozs</h2>
+<div *ngFor="let item of cartItems">
+  <p>{{ item.name }} - {{ item.price }}</p>
+  <button (click)="onRemoveFromCart(item.name)">Izņem no groza</button>
+</div>
+
+  

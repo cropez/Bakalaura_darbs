@@ -1,0 +1,22 @@
+<mat-card>
+    <mat-card-header>
+      <mat-card-title>Autorizācija</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <mat-form-field appearance="fill" class="full-width-input">
+          <mat-label>Lietotājvārds vai Email</mat-label>
+          <input matInput formControlName="email">
+          <mat-error *ngIf="loginForm.controls['email'].invalid">{{ getEmailErrorMessage() }}</mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="fill" class="full-width-input">
+          <mat-label>Parole</mat-label>
+          <input matInput formControlName="password" type="password">
+          <mat-error *ngIf="loginForm.controls['password'].invalid">{{ getPasswordErrorMessage() }}</mat-error>
+        </mat-form-field>
+        <mat-checkbox formControlName="remember">Atcerēties mani</mat-checkbox>
+        <button mat-raised-button color="primary" type="submit" [disabled]="loading">Ienākt</button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+  

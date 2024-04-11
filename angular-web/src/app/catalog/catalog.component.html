@@ -1,0 +1,15 @@
+<mat-grid-list cols="4" rowHeight="350px" gutterSize="10px">
+    <mat-grid-tile *ngFor="let product of products">
+      <mat-card>
+        <mat-card-content>
+          <h5 mat-line>{{ product.name }}</h5>
+          <p mat-line *ngFor="let detail of product.details">{{ detail }}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button>Skatīt vairāk</button>
+          <button mat-button (click)="onAddToCart(product)">Pievienot grozam</button>
+        </mat-card-actions>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+  
